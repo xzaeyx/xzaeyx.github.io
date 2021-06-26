@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+        <title>Sakshi's Homepage</title>
+
+        <!-- css files -->
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+    </head>
+    <body>
+
+        <script>
+            document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':8000/livereload.js?snipver=1"></' + 'script>')
+        </script>
+
+
+        <object class='cat' type="image/svg+xml" data="svg/cat.svg"> </object>
+        <div class='menu'>
+            <nav>
+                <a href='#'>art</a>
+                <a href='#'>music</a>
+                <a href='#'>photography</a>
+                <a href='#'>writing</a>
+                <a href='#'>store</a>
+                <a href='#' onclick='toggleAbout()'>about</a>
+            </nav>
+        </div>
+
+        <div class='popup' id='about'>
+            <div class='popup-content'>
+                <div class='hole-container'>
+                    <div></div>
+                    <object class='butterfly' type="image/svg+xml" data="svg/butterfly.svg"> </object>
+                    <div class='close-btn' onclick='toggleAbout()'>
+                        <object type="image/svg+xml" data="svg/close-btn.svg"> </object>
+                    </div>
+
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                <!--     <div class='hole'> </div> -->
+                </div>
+                <p>
+                    I am Sakshi, a student living in India. 
+                    I'm passionate about art and love to experiment with it. 
+                    I also like to express myself through writing. 
+                    I play piano when I'm feeling that vibe. 
+                    I am basically a potato most times but when I am not, 
+                    I do some other stuff like photography, designing, singing, reading and wondering why we exist. :)
+                </p>
+            </div>
+        </div>
+
+	<script>
+		let aboutDisplay = 'flex'
+		function toggleAbout() {
+			document.getElementById('about').style.display = aboutDisplay
+            aboutDisplay = aboutDisplay == 'flex' ? 'none' : 'flex'
+		}	
+	</script>
+
+    </body>
+</html>
+
