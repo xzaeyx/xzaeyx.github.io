@@ -1,0 +1,254 @@
+@font-face {
+    font-family: range-regular;
+    src: url(../fonts/range-regular-webfont.woff) format("woff2"),
+         url(../fonts/range-regular-webfont.ttf) format("truetype");
+}
+@font-face {
+    font-family: range-semibold;
+    src: url(../fonts/range-semibold-webfont.woff) format("woff2"),
+         url(../fonts/range-semibold-webfont.ttf) format("truetype");
+}
+@font-face {
+    font-family: dosis;
+    src: url(../fonts/Dosis.ttf) format("truetype");
+}
+/* @font-face { */
+/*     font-family: dosis-medium; */
+/*     src: url(../fonts/Dosis-Medium.ttf) format("truetype"); */
+/* } */
+@font-face {
+    font-family: dosis-semibold;
+    src: url(../fonts/Dosis-SemiBold.ttf) format("truetype");
+}
+
+/* @font-face { */
+/*     font-family: overpass-mono-semibold; */
+/*     src: url(../fonts/overpass-mono-semibold.otf); */
+/* } */
+/* @font-face { */
+/*     font-family: overpass-semibold; */
+/*     src: url(../fonts/overpass-semibold.otf); */
+/* } */
+
+
+html {
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+/* ------------------------------------------------- */
+.home-bg {
+    height:100%;
+    background-color: #1e1e1e;
+    overflow: hidden;
+    position: relative;
+}
+
+.hex-bg {
+    /* top: 20vh; */
+    /* top: 20vmin; */
+    bottom: -3px;
+    position: absolute;
+}
+.hex-bg object {
+    height: 80vh;
+    /* height: 80vmin; */
+}
+
+.home-text {
+    position: absolute;
+    margin-top: 70vh;
+
+    margin-left: 200px;
+    margin-left: 12.500em;
+    margin-left: 10.41vw;
+}
+.home-text .header {
+    margin: 0;
+    margin-left: -2px;
+
+    font-size: 55px;
+    font-size: 3.438em;
+}
+.home-text .sub-header {
+    margin: 0;
+
+    margin-top: 15px;
+    margin-top: 0.938em;
+
+    font-size: 20px;
+    font-size: 1.188em;
+}
+.nav-menu {
+    margin-left: -10px;
+    margin-left: -0.688em;
+
+    margin-top: 15px;
+    margin-top: 0.938em;
+}
+/* ------------------------------------------------- */
+
+.sub-section {
+    margin-left: 200px;
+    margin-left: 12.500em;
+    margin-left: 10.41vw;
+}
+.sub-section .heading {
+    font-family: dosis-semibold;
+    margin: 0;
+
+    font-size: 36px;
+    font-size: 2.250em;
+    
+    margin-top: 100px;
+    margin-top: 6.250rem;
+    /* margin-top: 5.20vw; */
+}
+.sub-section .desc {
+    font-family: range-regular;
+    margin: 0;
+
+    font-size: 16px;
+    font-size: 1.000em;
+    
+    margin-top: 40px;
+    margin-top: 2.500em;
+
+    margin-left: 50px;
+    margin-left: 3.125em;
+    margin-left: 2.5vw;
+}
+
+/* ------------------------------------------------- */
+.box-container {
+    margin-left: 50px;
+    margin-left: 3.125em;
+    margin-left: 2.5vw;
+    /* display: inline-block; */
+    /* vertical-align:top; */
+}
+
+.box {
+    font-size: 16px;
+    font-size: 1.000em;
+
+    margin-top: 60px;
+    margin-top: 3.750em;
+}
+.box p {
+    margin: 0;
+    margin-top: 7px;
+    margin-top: 0.438em;
+}
+.box a {
+    color: #b3b3b3;
+    color: #23dcdc;
+    margin-left: 4px;
+    margin-left: 0.250em;
+}
+
+.box .box-desc {
+    margin-left: 14px !important;
+    margin-left: 0.875em !important;
+    /* margin-left: 0.72vw !important; */
+}
+.project-box {
+    width: 350px;
+    width: 21.875em;
+
+    display: inline-block;
+    vertical-align:top;
+}
+.right-box {
+    margin-left: 120px;
+    margin-left: 7.500em;
+}
+.mid-desc {
+    margin-top: 60px !important;
+    margin-top: 3.750em !important;
+    /* margin-bottom: 10px !important; */
+}
+
+/* ------------------------------------------------- */
+.white { color: #d9d9d9; }
+.red { color: #d75252; }
+.cyan { color: #23dcdc; }
+.light-yellow { color: #c9baa7; }
+.dark-grey { color: #1e1e1e; }
+.medium-grey { color: #727779; }
+.light-grey { color: #b3b3b3; }
+
+.dosis { font-family: dosis; }
+/* .dosis-medium { font-family: dosis-medium; } */
+.dosis-semibold { font-family: dosis-semibold; }
+.range-regular { font-family: range-regular; }
+.range-semibold { font-family: range-semibold; }
+/* .overpass-semibold { font-family: overpass-semibold; } */
+/* .overpass-mono-semibold { font-family: overpass-mono-semibold; } */
+
+
+/* Effect 1: Brackets */
+nav a {
+    outline: none;
+    color: #c9baa7;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-size: 1.000em;
+}
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 5px;
+	content: '[';
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	transform: translateX(10px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 5px;
+	content: ']';
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .right-box {
+        margin-left: 0px;
+    }
+} 

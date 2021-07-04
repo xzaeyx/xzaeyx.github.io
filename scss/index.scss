@@ -23,41 +23,44 @@ body {
 }
 
 
-.menu {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 40px;
-    margin-right: 80px;
+.home {
+
+    #menu {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 40px;
+        margin-right: 80px;
 
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        align-items: flex-end;
-        // border: 1px solid black;
-    }
+        nav {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            align-items: flex-end;
+            // border: 1px solid black;
+        }
 
-    a {
-        text-decoration: none;
-        font-size: 50px;
-        font-family: 'tropicalasian', sans-serif;
-        font-weight: bold;
-        Color: #360b4f;
+        a {
+            text-decoration: none;
+            font-size: 50px;
+            font-family: 'tropicalasian', sans-serif;
+            font-weight: bold;
+            Color: #360b4f;
 
-        &:hover {
-            color: #6e5b99;
+            &:hover {
+                color: #6e5b99;
+            }
         }
     }
-}
 
 
-.cat {
-    position: absolute;
-    bottom: 40px;
-    left: 80px;
-    height: 50vmin;
+    #cat {
+        position: absolute;
+        bottom: 40px;
+        left: 80px;
+        height: 50vmin;
+    }
 }
 
 .popup {
@@ -75,67 +78,80 @@ body {
     // opacity: 0;
     // transition: opacity 0.25s ease;
 
-    .popup-content {
-        background: url('../watercolor_texture.jpg');
-        // border: 1px solid black;
-        // padding: 100px;
-        height: 600px;
-        width: 600px;
-        box-shadow: 0px 3px 40px rgba(0,0,0,.4);
-        // height: 100%;
-        // width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+
+    .popup-background {
+        z-index: 10;
+
+        background: #9ba9d5;
+        height: 70vmin;
+        width: 70vmin;
+
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        // align-items: center;
-        // justify-content: center;
+        border-radius: 6%;
+        box-shadow: 0px 3px 40px rgba(0,0,0,.4);
 
-        p {
-            padding: 30px;
-            padding-top: 0;
-            font-size: 30px;
-            font-family: littledays, sans-serif;
-            font-weight: bold;
-            line-height: 1.5;
-            color: #1e1e1e;
+
+        .close-btn, .close-btn-icon {
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: calc(((100% - 70vmin) / 2) + 25px);
+            right: calc(((100% - 70vmin) / 2) + 25px);
         }
 
-        .hole-container {
+        .popup-content {
+            // background: url('../watercolor_texture.jpg');
+            // border: 1px solid black;
+            // padding: 100px;
+            // height: 600px;
+            // width: 600px;
+            height: 60vmin;
+            width: 60vmin;
+            // border: 1px solid black;
+            background: #ec9cab;
+            border-radius: 6%;
+            box-shadow: 0px 3px 40px rgba(0,0,0,.4);
+            // height: 100%;
+            // width: 100%;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
 
-            div, object {
-                flex-grow: 1;
-                flex-shrink: 0;
-                flex-basis: 0;
+            // align-items: center;
+            // justify-content: center;
+
+            p {
+                padding: 30px;
+                padding-top: 0;
+                padding-bottom: 0;
+                font-size: 32px;
+                font-family: 'dosis', sans-serif;
+                letter-spacing: 1px;
+                // text-align: center;
+                line-height: 1.5;
+                color: #1e1e1e;
             }
 
-            .close-btn {
+            .icons {
                 display: flex;
-                flex-direction: row-reverse;
-                cursor: pointer;
+                padding-left: 25px;
 
-                object {
+                .icon {
                     height: 30px;
-                    right: 0px;
-                    flex-grow: 0;
-                    margin: 20px;
+                    margin: 10px;
                 }
             }
 
-            .butterfly {
-                height: 40px;
-                margin-top: 30px;
+            #rabbit {
+                position: absolute;
+                height: 20vmin;
+                bottom: calc((100% - 70vmin) / 2);
+                right: calc(((100% - 70vmin) / 2) + 20px);
             }
-
-
-            // .hole {
-            //     width: 25px;
-            //     height: 25px;
-            //     background: $cyany;
-            //     border-radius: 100%;
-            //     margin: 10px;
-            // }
         }
     }
 }
