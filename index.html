@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
         <title>Sakshi's Homepage</title>
 
         <!-- css files -->
@@ -63,11 +63,11 @@
 
             <div id='menu'>
                 <nav>
-                    <a href='#'>art</a>
-                    <a href='#'>music</a>
-                    <a href='#'>photography</a>
-                    <a href='#'>writing</a>
-                    <a href='#'>store</a>
+                    <a target="_blank" href='https://www.deviantart.com/zaeyx'>art</a>
+                    <a target="_blank" href='#'>music</a>
+                    <a target="_blank" href='https://www.flickr.com/photos/zaeyx'>photography</a>
+                    <a target="_blank" href='https://xzaeyx.medium.com/'>writing</a>
+                    <a target="_blank" href='https://themokuseistore.etsy.com'>store</a>
                     <a href='#' onclick='toggleAbout()'>about</a>
                 </nav>
             </div>
@@ -91,7 +91,7 @@
                     <div class='icons'>
                         <object class='icon' type="image/svg+xml" data="svg/email-icon.svg"> </object>
                         <object class='icon' type="image/svg+xml" data="svg/twitter-icon.svg"> </object>
-                        <object class='icon' type="image/svg+xml" data="svg/instagram-icon.svg"> </object>
+                        <!-- <object class='icon' type="image/svg+xml" data="svg/instagram-icon.svg"> </object> -->
                     </div>
                     <!-- <object class='rabbit' type="image/svg+xml" data="svg/rabbit.svg"> </object> -->
 					<svg id="rabbit" version="1.1" viewBox="0 0 97.426239 114.2196" 
@@ -114,7 +114,13 @@
             </div>
         </div>
 
+        <div id="particles-js"></div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
 	<script>
+        //particlesJS.load('particles-js', 'particlesjs-config.json')
+
+
 		let aboutDisplay = 'flex'
 		let blurFilter = 'blur(5px)'
 		function toggleAbout() {

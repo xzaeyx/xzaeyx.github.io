@@ -1,7 +1,12 @@
+// @font-face {
+//     font-family: 'littledays';
+//     src: url(../fonts/littledays.ttf) format("truetype");
+// }
 @font-face {
-    font-family: 'littledays';
-    src: url(../fonts/littledays.ttf) format("truetype");
+    font-family: 'ostrich sans bold';
+    src: url(../fonts/OstrichSans-Bold.otf);
 }
+
 @font-face {
     font-family: 'tropicalasian';
     src: url(../fonts/tropicalasian.ttf) format("truetype");
@@ -29,9 +34,10 @@ body {
         position: absolute;
         bottom: 0;
         right: 0;
-        margin-bottom: 40px;
-        margin-right: 80px;
-
+        // margin-bottom: 40px;
+        margin-bottom: 3.7vh;
+        // margin-right: 80px;
+        margin-right: 4vw;
 
         nav {
             display: flex;
@@ -43,9 +49,18 @@ body {
 
         a {
             text-decoration: none;
-            font-size: 50px;
-            font-family: 'tropicalasian', sans-serif;
-            font-weight: bold;
+            // font-size: 47px;
+            font-size: 5.5vmin;
+            // font-family: 'tropicalasian', sans-serif;
+            font-family: 'ostrich sans bold', sans-serif;
+            // font-family: 'linden hill', sans-serif;
+            // font-family: 'junction', sans-serif;
+            // font-family: 'league spartan', sans-serif;
+            // font-family: 'raleway', sans-serif;
+            // font-family: 'prociono', sans-serif;
+            // font-family: 'prociono', sans-serif;
+            // font-weight: bold;
+            letter-spacing: 3px;
             Color: #360b4f;
 
             &:hover {
@@ -57,9 +72,12 @@ body {
 
     #cat {
         position: absolute;
-        bottom: 40px;
-        left: 80px;
-        height: 50vmin;
+        // bottom: 40px;
+        bottom: 3.7vh;
+        // left: 80px;
+        left: 4vw;
+        // height: 50vmin;
+        height: 50vh;
     }
 }
 
@@ -84,8 +102,8 @@ body {
         z-index: 10;
 
         background: #9ba9d5;
-        height: 70vmin;
-        width: 70vmin;
+        height: 72vmin;
+        width: 72vmin;
 
         display: flex;
         align-items: center;
@@ -97,11 +115,15 @@ body {
 
         .close-btn, .close-btn-icon {
             cursor: pointer;
-            height: 20px;
-            width: 20px;
+            // height: 20px;
+            height: 2.65vmin;
+            // width: 20px;
+            width: 2.65vmin;
             position: absolute;
-            top: calc(((100% - 70vmin) / 2) + 25px);
-            right: calc(((100% - 70vmin) / 2) + 25px);
+            // top: calc(((100% - 70vmin) / 2) + 25px);
+            top: calc(((100% - 72vmin) / 2) + 2.61vmin);
+            // right: calc(((100% - 70vmin) / 2) + 25px);
+            right: calc(((100% - 72vmin) / 2) + 2.61vmin);
         }
 
         .popup-content {
@@ -110,8 +132,8 @@ body {
             // padding: 100px;
             // height: 600px;
             // width: 600px;
-            height: 60vmin;
-            width: 60vmin;
+            height: 62vmin;
+            width: 62vmin;
             // border: 1px solid black;
             background: #ec9cab;
             border-radius: 6%;
@@ -120,38 +142,59 @@ body {
             // width: 100%;
             display: flex;
             flex-direction: column;
+            overflow-y: auto;
+            // overflow-y: scroll;
 
             // align-items: center;
             // justify-content: center;
 
             p {
-                padding: 30px;
+                // padding: 30px;
+                padding: 2.77vh;
                 padding-top: 0;
                 padding-bottom: 0;
-                font-size: 32px;
+                margin-bottom: 0.92vh;
+                // font-size: 32px;
+                font-size: 3.46vh;
                 font-family: 'dosis', sans-serif;
                 letter-spacing: 1px;
                 // text-align: center;
-                line-height: 1.5;
+                // line-height: 50px;
+                line-height: 4.92vh;
                 color: #1e1e1e;
             }
 
             .icons {
                 display: flex;
-                padding-left: 25px;
+                // padding-left: 25px;
+                padding-left: 1.70vh;
 
                 .icon {
-                    height: 30px;
-                    margin: 10px;
+                    // height: 30px;
+                    height: 2.77vh;
+                    // margin: 10px;
+                    margin: 0.92vh;
                 }
             }
 
             #rabbit {
                 position: absolute;
                 height: 20vmin;
-                bottom: calc((100% - 70vmin) / 2);
-                right: calc(((100% - 70vmin) / 2) + 20px);
+                bottom: calc((100% - 72vmin) / 2);
+                right: calc(((100% - 72vmin) / 2) + 1.85vmin);
             }
         }
+    }
+}
+
+#particle-js {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .popup-content p {
+        font-size: 15.3px !important;
+        line-height: 1.2 !important;
     }
 }
