@@ -5,8 +5,62 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
         <title>Sakshi's Homepage</title>
 
+		<!-- prefetch stuff -->
+        <link rel="dns-prefetch" href="https://catmeow.art">
+        <link rel="subresource" href="index.css">
+
+        <!-- Theme Color for Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#a6c8cc">
+
+        <!-- icons stuff -->
+        <link rel="icon" sizes="192x192" href="favicon.png">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="mask-icon" href="favicon.png" color='black'>
+
+        <!-- meta data -->
+        <meta name="description" content="Hello, I am Sakshi. Check out my random creations and stuff I do!">
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <link rel="me" href="mailto:chocolateicecreamismyfav@gmail.com">
+        <link rel="author" href="Sakshi">
+
+        <!-- opengraph social -->
+        <meta property="og:url" content="https://catmeow.art">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Sakshi's Homepage">
+        <meta property="og:image" content="favicon.png">
+        <meta property="og:description" content="Hello, I am Sakshi. Check out my random creations and stuff I do!">
+        <meta property="og:site_name" content="catmeow.art">
+        <meta property="og:locale" content="en_US">
+        <meta property="article:author" content="Sakshi">
+
+        <!-- twitter cards social -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@xzaeyx">
+        <meta name="twitter:creator" content="@xzaeyx">
+        <meta name="twitter:url" content="https://catmeow.art">
+        <meta name="twitter:title" content="Sakshi's Homepage">
+        <meta name="twitter:description" content="Hello, I am Sakshi. Check out my random creations and stuff I do!">
+        <meta name="twitter:image" content="favicon.png">
+        <meta name="twitter:dnt" content="on">
+
+        <!-- google social -->
+        <meta itemprop="name" content="Sakshi's Homepage">
+        <meta itemprop="description" content="Hello, I am Sakshi. Check out my random creations and stuff I do!">
+        <meta itemprop="image" content="favicon.png">
+
         <!-- css files -->
         <link rel="stylesheet" href="css/index.css" type="text/css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWZY4PNYP5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-JWZY4PNYP5');
+		</script>
+
     </head>
     <body>
 
@@ -64,7 +118,7 @@
             <div id='menu'>
                 <nav>
                     <a target="_blank" href='https://www.deviantart.com/zaeyx'>art</a>
-                    <a target="_blank" href='#'>music</a>
+                    <a href='#' onclick='alert("Coming soon! :P")'>music</a>
                     <a target="_blank" href='https://www.flickr.com/photos/zaeyx'>photography</a>
                     <a target="_blank" href='https://xzaeyx.medium.com/'>writing</a>
                     <a target="_blank" href='https://themokuseistore.etsy.com'>store</a>
@@ -89,8 +143,8 @@
                         and wondering why we exist. :)
                     </p>
                     <div class='icons'>
-                        <object class='icon' type="image/svg+xml" data="svg/email-icon.svg"> </object>
-                        <object class='icon' type="image/svg+xml" data="svg/twitter-icon.svg"> </object>
+                        <a href='mailto:chocolateicecreamismyfav@gmail.com' class='icon email'></a>
+                        <a target="_blank" href='https://twitter.com/xzaeyx' class='icon twitter'></a>
                         <!-- <object class='icon' type="image/svg+xml" data="svg/instagram-icon.svg"> </object> -->
                     </div>
                     <!-- <object class='rabbit' type="image/svg+xml" data="svg/rabbit.svg"> </object> -->
@@ -157,6 +211,7 @@
                 catEyeRadius += catDelta
 
                 if( catEyeRadius <= 0 ) {
+					catEyeRadius = 0
                     catDelta = catAmt
                     setTimeout(animateCat, 1000 / 60)
                 } else if( catEyeRadius >= catMaxRadius ) {
@@ -179,6 +234,7 @@
                 rabbitEyeRadius += rabbitDelta
 
                 if( rabbitEyeRadius <= 0 ) {
+                    rabbitEyeRadius = 0
                     rabbitDelta = rabbitAmt
                     setTimeout(animateRabbit, 1000 / 60)
                 } else if( rabbitEyeRadius >= rabbitMaxRadius ) {

@@ -163,13 +163,28 @@ body {
             .icons {
                 display: flex;
                 // padding-left: 25px;
-                padding-left: 1.70vh;
+                // padding-left: 1.70vh;
+                padding-left: 2.77vh;
+                height: 2.77vh;
 
                 .icon {
+                    // cursor: pointer;
+                    display: block;
                     // height: 30px;
-                    height: 2.77vh;
+                    width: 3.77vh;
                     // margin: 10px;
-                    margin: 0.92vh;
+                    margin-right: 1.92vh;
+                }
+
+                .email {
+                    background-image: url('../svg/email-icon.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                .twitter {
+                    background-image: url('../svg/twitter-icon.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
                 }
             }
 
